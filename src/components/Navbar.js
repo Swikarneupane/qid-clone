@@ -21,9 +21,11 @@ const Navbar = () => {
   const router = useRouter()
   const path = router.pathname
   return (
-    <div className="fixed px-6 py-3 bg-black w-full flex flex-row items-center justify-between">
+    <div className="fixed p-5 bg-black w-full flex flex-row items-center justify-between shadow-md">
       <div className="text-[#C4C5C5] text-4xl">
-        <Link href="/">qid</Link>
+        <Link href="/" className=" italic font-bold">
+          qid
+        </Link>
       </div>
       <div>
         <ul className="flex flex-row gap-5 items-center justify-center">
@@ -35,7 +37,7 @@ const Navbar = () => {
                 path == items.href
                   ? "text-white"
                   : "hover:text-white text-[#AEAB9E]"
-              } cursor-pointer  duration-300`}>
+              } cursor-pointer  duration-300 font-semibold`}>
               {items.text}
             </Link>
           ))}
