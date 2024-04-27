@@ -22,7 +22,7 @@ const Navbar = () => {
   const path = router.pathname
   return (
     <div className="fixed py-5 bg-black flex flex-row w-full items-center justify-between shadow-md">
-      <div className="text-[#C4C5C5] text-4xl">
+      <div className="text-[#C4C5C5] text-[40px]">
         <Link href="/" className=" italic font-bold">
           qid
         </Link>

@@ -44,22 +44,28 @@ const Footer = () => {
       <hr className="bg-[#C4C5C5] text-[#C4C5C5] w-[100%] mb-5" />
       <div className="flex flex-row items-center justify-between">
         <div className="text-[#C4C5C5] text-4xl italic font-bold">qid</div>
-        <div className="flex flex-row gap-9">
+        <div className="flex flex-row gap-24">
           <div>
-            <h2 className="text-[#FEFFFE]">Download App</h2>
+            <h2 className="text-[#FEFFFE] mb-7 font-bold text-2xl">
+              Download App
+            </h2>
             <ul>
               {downloadLists.map((item, index) => (
-                <li key={index} className="text-[#AEAB9E]">
+                <li
+                  key={index}
+                  className="text-[#AEAB9E] mb-7 font-medium text-lg hover:text-white duration-300 cursor-pointer">
                   {item.text}
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <h2 className="text-[#FEFFFE]">Legal</h2>
+            <h2 className="text-[#FEFFFE] mb-7 font-bold text-2xl">Legal</h2>
             <ul>
               {legalLists.map((item, index) => (
-                <li key={index} className="text-[#AEAB9E]">
+                <li
+                  key={index}
+                  className="text-[#AEAB9E] mb-7 font-medium text-lg hover:text-white duration-300 cursor-pointer">
                   {item.text}
                 </li>
               ))}

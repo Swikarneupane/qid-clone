@@ -9,8 +9,8 @@ export default function App({ Component, pageProps }) {
   return (
     <div className="bg-[#0B0A0B]">
       <div
-        className={`bg-[#0B0A0B] max-w-[60vw] mx-auto min-h-screen ${raleway.className} `}>
-        <div className="flex w-[100%] mr-0 pt-3">
+        className={`bg-[#0B0A0B] max-w-[1150px] mx-auto min-h-screen ${raleway.className} `}>
+        <div>
           <Navbar />
         </div>
         <Component {...pageProps} />

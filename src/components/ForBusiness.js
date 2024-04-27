@@ -5,13 +5,17 @@ const ForBusiness = () => {
   return (
     <div className="text-white py-9">
       <div className="px-29 text-center">
-        <h2>qid for business</h2>
-        <p>manage all your IDs with one QR</p>
+        <h2 className="text-[70px] font-extrabold">
+          <span className="italic">qid</span> for business
+        </h2>
+        <p className="text-[30px] font-semibold">
+          manage all your IDs with one QR
+        </p>
       </div>
       <div className="w-[98vw]">
         <Image
           src="/assets/home aadhar.png"
-          width={1000}
+          width={3000}
           height={50}
           alt="Aadhar"
           className="w-[100%]"

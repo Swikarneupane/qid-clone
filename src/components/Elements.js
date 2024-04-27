@@ -4,13 +4,15 @@ const Elements = () => {
   return (
     <div className="text-white">
       {/* Two base elements part  */}
-      <div className="flex flex-row items-center">
-        <h2 className="w-[30%]">Two Base elements of Identity ecosystem</h2>
-        <div className="w-[70%] flex flex-row gap-5">
+      <div className="flex flex-row items-center justify-between">
+        <h2 className="w-[30%] text-[40px] font-bold">
+          Two Base elements of Identity ecosystem
+        </h2>
+        <div className="w-[50%] flex flex-row gap-5">
           <div className="border-[1px] border-gray-700 shadow-xl shadow-[#121F12] bg-[#121F12] flex h-max flex-col rounded-xl p-5 gap-3">
-            <p className="text-[40px] font-extrabold text-gray-700">1</p>
+            <p className="text-[50px] font-extrabold text-gray-700">1</p>
             <h2 className="text-[20px] font-semibold ">Managing</h2>
-            <p className="text-sm font-extralight">
+            <p className="text-sm font-light">
               Consolidate all your IDs securely in one place with qid, making
               them easily accessible whenever you need them
             </p>
