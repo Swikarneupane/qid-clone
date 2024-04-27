@@ -5,7 +5,7 @@ const Analytics = () => {
   return (
     <div className="text-white flex flex-col gap-5 py-8">
       <div className="flex flex-row gap-5">
-        <div className="flex flex-col w-[20%] gap-5 border-[1px] border-gray-700 p-5 rounded-xl">
+        <div className="flex flex-col w-[25%] gap-5 border-[1px] border-gray-700 p-5 rounded-xl">
           <Image
             src="/assets/home3.png"
             width={100}
@@ -16,7 +16,7 @@ const Analytics = () => {
           <h3>Collect IDs with QR</h3>
           <p className="font-extralight text-sm">Easy to setup QR code stand</p>
         </div>
-        <div className="flex flex-col w-[80%] gap-5 border-[1px] border-gray-700 p-5 rounded-xl">
+        <div className="flex flex-col w-[75%] gap-5 border-[1px] border-gray-700 p-5 rounded-xl">
           <h3>Business Analytics</h3>
           <Image
             src="/assets/home2.png"
@@ -32,14 +32,14 @@ const Analytics = () => {
         </div>
       </div>
       <div className="flex flex-row gap-5">
-        <div className="flex flex-col w-[20%] gap-5 border-[1px] border-gray-700 p-5 rounded-xl">
+        <div className="flex flex-col w-[25%] gap-5 border-[1px] border-gray-700 p-5 rounded-xl">
           <h3>Customized Interface</h3>
           <p className="font-extralight text-sm">
             Tailor qid’s interface to perfectly align with your brand, creating
             a seamless and personalized user experience.
           </p>
         </div>
-        <div className="flex flex-col w-[40%] gap-5 border-[1px] border-gray-700 p-5 rounded-xl">
+        <div className="flex flex-col w-[37.5%] gap-5 border-[1px] border-gray-700 p-5 rounded-xl">
           <h3>Developer APIs</h3>
           <p className="font-extralight text-sm">
             Supercharge your applications with qid’s robust developer APIs,
@@ -47,7 +47,7 @@ const Analytics = () => {
             platform and create unique, personalized experiences for your users.
           </p>
         </div>
-        <div className="flex flex-col w-[40%] gap-5 border-[1px] border-gray-700 p-5 rounded-xl">
+        <div className="flex flex-col w-[37.5%] gap-5 border-[1px] border-gray-700 p-5 rounded-xl">
           <h3>One-Click C-Form</h3>
           <p className="font-extralight text-sm">
             Simplify C-Form filling with qid’s 1-Click solution, automating the

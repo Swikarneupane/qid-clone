@@ -1,5 +1,14 @@
 import Image from "next/image"
 import React, { useRef, useEffect, useState } from "react"
+import { Navigation, A11y, Autoplay } from "swiper/modules"
+
+import { Swiper, SwiperSlide } from "swiper/react"
+
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+import "swiper/css/scrollbar"
+import "swiper/css/autoplay"
 
 const testimonials = [
   {
@@ -86,10 +95,10 @@ const Testimonials = () => {
         </div>
         <div
           ref={parentRef}
-          className="grid xl:grid-cols-3 grid-cols-1 overflow-hidden gap-5 my-5">
+          className="grid xl:grid-cols-3 grid-cols-1 overflow-hidden gap-5 my-5 w-full">
           <div
             ref={childRef}
-            className="p-7 border-[1px] border-gray-500 gap-5 flex flex-col rounded-lg">
+            className="p-7 border-[1px] border-gray-500 gap-5 flex flex-col rounded-lg w-full">
             <div className="w-[120px] h-[120px] rounded-lg">
               <Image
                 src={testimonials[currentIndex].src}
@@ -116,3 +125,85 @@ const Testimonials = () => {
 }
 
 export default Testimonials
+
+
+
+//   return (
+//     <>
+//       <section
+//         id="sponsors"
+//         className="flex flex-col w-[100%] h-max text-center  justify-around items-center bg-black text-white  "
+//       >
+//         <div className=" text-center mt-4 ">
+//           <h3 className="font-extrabold text-[40px]  text-center text-[white] border-[#B7002B] border-b-2 mb-10">
+//             Our <span className="text-[#B7002B]">Sponsors</span>
+//           </h3>
+//         </div>
+//         <div className="flex flex-row mb-16">
+//           <Swiper
+//             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+//             autoplay={{ delay: 2000 }}
+//             // freeMode={true}
+//             scrollbar={{ draggable: true }}
+//             parallax
+//             // slidesPerView={3}
+//             breakpoints={{
+//               360: {
+//                 slidesPerView: 2,
+//               },
+//               680: {
+//                 slidesPerView: 3,
+//               },
+//               1200: {
+//                 slidesPerView: 4,
+//               },
+//             }}
+//             className="flex flex-col h-max w-[90vw] "
+//           >
+//             {loading ? (
+//               <div
+//                 // key={i}
+//                 className="flex h-[80%] w-[100%] justify-between "
+//               >
+//                 {loader.map((item, i) => (
+//                   <Skeleton
+//                     key={i}
+//                     className=" h-[12rem]"
+//                     width={'14rem'}
+//                     baseColor="#8f8c8c"
+//                     highlightColor="#bbbabaff"
+//                     borderRadius={'1rem'}
+//                   />
+//                 ))}
+//               </div>
+//             ) : (
+//               <>
+//                 {sponsers &&
+//                   sponsers.map((sponser) => (
+//                     <SwiperSlide
+//                       key={sponser._id}
+//                       className="flex items-center justify-center h-[80%] w-[80%] "
+//                     >
+//                       <div className="flex justify-center ml-4">
+//                         <Image
+//                           src={`${process.env.NEXT_PUBLIC_SERVER_ADDRESS}/${sponser.image}`}
+//                           width={200}
+//                           height={200}
+//                           alt={sponser ? sponser.name : 'Sponsers'}
+//                           className="h-[10rem] md:h-[14rem] lg:h-[16rem] w-max object-contain z-[50]"
+//                           unoptimized
+//                           priority
+//                         />
+//                       </div>
+//                     </SwiperSlide>
+//                   ))}
+//               </>
+//             )}
+//           </Swiper>
+//         </div>
+//       </section>
+//     </>
+//   );
+// };
+
+// export default Sponsors;
