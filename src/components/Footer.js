@@ -1,5 +1,6 @@
 import Link from "next/link"
 import React from "react"
+import { useRouter } from "next/router"
 
 const downloadLists = [
   {
@@ -22,23 +23,25 @@ const downloadLists = [
 const legalLists = [
   {
     text: "Privacy Policy",
-    href: "/",
+    href: "/privacy-policy",
   },
   {
     text: "Terms of Use",
-    href: "/",
+    href: "/terms-of-use",
   },
   {
     text: "Cancellation and Refund Policy",
-    href: "/",
+    href: "/cancellation",
   },
   {
     text: "Shipping and Return Policy",
-    href: "/",
+    href: "/shipping-and-return-policy",
   },
 ]
 
 const Footer = () => {
+  const router = useRouter()
+  const path = router.pathname
   return (
     <div className="w-[100%] px-5 py-5">
       <hr className="bg-[#C4C5C5] text-[#C4C5C5] w-[100%] mb-5" />
@@ -53,7 +56,11 @@ const Footer = () => {
               {downloadLists.map((item, index) => (
                 <li
                   key={index}
-                  className="text-[#AEAB9E] mb-7 font-medium text-lg hover:text-white duration-300 cursor-pointer">
+                  className={`text-[#AEAB9E] mb-7 font-medium text-lg hover:text-white duration-300 cursor-pointer ${
+                    path == item.href
+                      ? "text-white"
+                      : "hover:text-white text-[#AEAB9E]"
+                  } `}>
                   <Link href={item.href}>{item.text}</Link>
                 </li>
               ))}
@@ -65,8 +72,12 @@ const Footer = () => {
               {legalLists.map((item, index) => (
                 <li
                   key={index}
-                  className="text-[#AEAB9E] mb-7 font-medium text-lg hover:text-white duration-300 cursor-pointer">
-                  {item.text}
+                  className={`text-[#AEAB9E] mb-7 font-medium text-lg hover:text-white duration-300 cursor-pointer ${
+                    path == item.href
+                      ? "text-white"
+                      : "hover:text-white text-[#AEAB9E]"
+                  }  `}>
+                  <Link href={item.href}>{item.text}</Link>
                 </li>
               ))}
             </ul>

@@ -1,3 +1,4 @@
+import Link from "next/link"
 import React from "react"
 
 const Hero = () => {
@@ -6,9 +7,11 @@ const Hero = () => {
       <p className="text-[white] text-center font-bold text-[70px]">
         every person deserves to know and be known by their true identity
       </p>
-      <button className="px-10 w-max py-4 font-bold text-md rounded-3xl bg-white">
+      <Link
+        href="/app"
+        className="px-10 w-max py-4 font-bold text-md rounded-3xl bg-white">
         Download qid
-      </button>
+      </Link>
     </div>
   )
 }

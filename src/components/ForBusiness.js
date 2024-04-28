@@ -2,6 +2,7 @@ import Image from "next/image"
 import React from "react"
 
 const ForBusiness = () => {
+  
   return (
     <div className="text-white py-9">
       <div className="px-29 text-center">
