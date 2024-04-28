@@ -1,37 +1,43 @@
 import Image from "next/image"
 import React from "react"
+import Link from "next/link"
 
 const App = () => {
   return (
-    <div className="bg-[#FEFFFE] flex flex-row items-center justify-center p-20 gap-5">
-      <div className="w-[60%]">
-        <h3 className="text-black text-4xl font-bold mb-5">Get the qid App</h3>
-        <div className="flex flex-row gap-3">
+    <div className="bg-[#FEFFFE] flex flex-row items-center justify-center px-16 pt-20 pb-10 gap-5">
+      <div className="w-[73%]">
+        <h3 className="text-black text-[55px] font-extrabold mb-5">
+          Get the qid App
+        </h3>
+
+        <div className="flex flex-row gap-5 items-center justify-center w-full h-full">
           <div className="flex flex-col gap-5">
-            <div className="flex flex-row items-center justify-center gap-5 bg-black  h-[100px] p-3 rounded-xl text-white">
-              {/* Add apple and imgs  */}
-              <div className="flex flex-col w-full">
-                <p>Download on the</p>
-                <p className="text-xl">App Store</p>
-              </div>
-            </div>
-            <div className="flex flex-row items-center justify-center gap-5 bg-black h-[100px] px-3 rounded-xl text-white">
-              {/* Add apple and playstore imgs  */}
-              <div className="flex flex-col w-full">
-                <p className="text-sm font-extralight">Download on the</p>
-                <p className="text-2xl font-semibold">App Store</p>
-              </div>
-            </div>
+            <Link href="https://apps.apple.com/us/app/qid-quick-id/id1629041779">
+              <Image
+                src="/assets/app store.png"
+                width={250}
+                height={20}
+                alt="App Store"
+                // className="w-full h-full"
+              />
+            </Link>
+            <Link href="https://play.google.com/store/apps/details?id=com.quickids.digilocker.qid">
+              <Image
+                src="/assets/google.png"
+                width={250}
+                height={20}
+                alt="App Store"
+                // className="w-full h-full"
+              />
+            </Link>
           </div>
-          <div>
-            <Image
-              src="/assets/app2.png"
-              height={20}
-              width={200}
-              alt="QR"
-              className="w-full h-full object-contain"
-            />
-          </div>
+          <Image
+            src="/assets/app2.png"
+            height={20}
+            width={200}
+            alt="QR"
+            className=""
+          />
         </div>
 
         {/* <div></div> */}

@@ -4,19 +4,19 @@ import React from "react"
 const downloadLists = [
   {
     text: "Android",
-    href: "/",
+    href: "https://play.google.com/store/apps/details?id=com.quickids.digilocker.qid",
   },
   {
     text: "IOS",
-    href: "/",
+    href: "https://apps.apple.com/us/app/qid-quick-id/id1629041779",
   },
   {
     text: "C-Form Pro Plugin",
-    href: "/",
+    href: "https://chromewebstore.google.com/detail/qid-c-form-pro/afghjacdcfhoikcccemlchhmokfgobpj?pli=1",
   },
   {
     text: "Book a Demo",
-    href: "/",
+    href: "/booking",
   },
 ]
 const legalLists = [
@@ -40,7 +40,7 @@ const legalLists = [
 
 const Footer = () => {
   return (
-    <div className="w-[100%] py-5">
+    <div className="w-[100%] px-5 py-5">
       <hr className="bg-[#C4C5C5] text-[#C4C5C5] w-[100%] mb-5" />
       <div className="flex flex-row items-center justify-between">
         <div className="text-[#C4C5C5] text-4xl italic font-bold">qid</div>
@@ -54,7 +54,7 @@ const Footer = () => {
                 <li
                   key={index}
                   className="text-[#AEAB9E] mb-7 font-medium text-lg hover:text-white duration-300 cursor-pointer">
-                  {item.text}
+                  <Link href={item.href}>{item.text}</Link>
                 </li>
               ))}
             </ul>

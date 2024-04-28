@@ -16,15 +16,17 @@ const threeItems = [
 
 const Cform = () => {
   return (
-    <div className="text-white flex flex-col gap-7 py-20 px-5">
+    <div className="text-white flex flex-col gap-7 pt-64 px-5">
       <div className="flex flex-col gap-3">
-        <h2>C-Form Automation</h2>
-        <p>Say Goodbye to Manual C-Forms</p>
+        <h2 className="font-bold text-[70px]">C-Form Automation</h2>
+        <p className="font-semibold text-[30px] mb-5">
+          Say Goodbye to Manual C-Forms
+        </p>
         <div className="flex flex-row gap-3">
-          <button className="px-5 py-2 rounded-3xl font-bold bg-white text-black">
+          <button className="px-7 py-3 rounded-3xl font-bold bg-white text-black text-[20px]">
             Book a demo
           </button>
-          <button className="px-5 py-2 rounded-3xl font-bold bg-black text-white border-[1px] border-gray-500 flex flex-row gap-1 items-center">
+          <button className="px-7 py-3 rounded-3xl font-bold bg-black text-white border-[1px] border-gray-500 flex flex-row gap-1 items-center text-[20px]">
             <svg
               viewBox="0 0 15 15"
               fill="none"
@@ -57,29 +59,31 @@ const Cform = () => {
           className="w-full h-full"
         />
       </div>
-      <div>
-        <h3>Trust us, it&apos;s truly a matter of just one click.</h3>
+      <div className="my-9">
+        <h3 className="font-bold text-[70px]">
+          Trust us, it&apos;s truly a matter of just one click.
+        </h3>
         <div className="grid grid-cols-3 gap-3">
           {threeItems.map((items, index) => (
             <div
               key={index}
-              className="bg-gray-500 border-[1px] border-gray-300 rounded-lg p-3">
+              className=" bg-gray-900 border-[1px] font-semibold text-[30px] border-gray-300 rounded-lg py-5 px-6">
               {items.text}
             </div>
           ))}
         </div>
       </div>
-      <div className="w-full flex flex-row items-center">
-        <div className="w-[60%]">
-          <h1>
+      <div className="w-full flex flex-row items-center gap-20 my-9">
+        <div className="w-[50%]">
+          <h1 className="font-medium text-[40px]">
             Elevate C-Form Processing with qid&apos;s State-of-the-Art Chrome
             Extension
           </h1>
-          <p>
+          <p className="font-medium text-[25px]">
             Simplify C-Form management like never before with qid&apos;s
             revolutionary Chrome extension.
           </p>
-          <button className="px-5 py-3 rounded-3xl font-bold bg-white text-black border-[1px] border-gray-500 flex flex-row gap-1 items-center">
+          <button className="px-6 py-3 text-[20px] gap-2 rounded-3xl font-bold bg-white text-black border-[1px] border-gray-500 flex flex-row gap-1 items-center">
             <svg
               viewBox="0 0 15 15"
               fill="none"
@@ -112,9 +116,9 @@ const Cform = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-5 border-[1px] border-gray-500 rounded-lg">
-        <h3>What is C-Form?</h3>
-        <p>
+      <div className="flex flex-col gap-4 p-5 border-[1px] border-gray-500 rounded-lg mt-5">
+        <h3 className="font-bold text-[50px]">What is C-Form?</h3>
+        <p className="text-[22px]">
           In India, a{" "}
           <a href="" target="_blank" className="underline">
             <strong>C-Form</strong>
@@ -122,18 +126,18 @@ const Cform = () => {
           is a mandatory document required under the Foreigners&apos;
           Registration Act, 1946.
         </p>
-        <p>
+        <p className="text-[22px]">
           It serves as a record of the stay of foreign nationals within the
           country.
         </p>
-        <p>
+        <p className="text-[22px]">
           Hotels, guesthouses, and other accommodation providers are legally
           obligated to submit C-Forms to local authorities for every foreign
           guest&apos;s stay.
         </p>
         <Link
           href="/cform"
-          className=" px-5 py-3 w-max border-[1px] border-gray-500 rounded-3xl">
+          className=" px-5 py-3 font-bold text-[20px] w-max border-[1px] border-gray-500 rounded-3xl">
           Read More
         </Link>
       </div>

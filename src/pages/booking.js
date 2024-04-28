@@ -1,14 +1,14 @@
 import React from "react"
 
-const Contact = () => {
+const Booking = () => {
   return (
-    <div className="text-white px-16 pt-60 pb-36 flex flex-row items-center gap-8">
-      <div className="w-[40%] flex flex-col gap-3">
-        <h2 className="font-bold text-[50px]">Contact Us</h2>
+    <div className="text-white px-10 pt-60 pb-36 flex flex-row items-center gap-8">
+      <div className="w-[50%] flex flex-col gap-3">
+        <h2 className="font-bold text-[50px]">Book a Demo</h2>
         <p className="text-[25px]">
           Discover Qid – Your Partner in Secure Identity Management
         </p>
-        <p className="flex flex-row items-center gap-3 font-bold">
+        {/* <p className="flex flex-row items-center gap-3 font-bold">
           <svg
             viewBox="0 0 15 15"
             fill="none"
@@ -33,23 +33,23 @@ const Contact = () => {
               fill="currentColor"></path>
           </svg>
           +91 960 640 640 4
-        </p>
+        </p> */}
         <hr />
         <p className="text-blue-400 font-semibold text-[32px]">
-          Trusted by 25,000+ Users
+          Trusted by 30,000+ Users
         </p>
       </div>
-      <div className="px-8 w-[60%] py-8 border-[1px] rounded-3xl font-medium">
+      <div className="px-8 w-[50%] py-8 border-[1px] rounded-3xl font-medium">
         <form className="flex flex-col gap-7">
           <div className="flex flex-col font-medium">
             <label htmlFor="name" className="text-gray-400">
-              Name <span className="text-red-500 text-xs">*</span>
+              Name
             </label>
             <input
               type="text"
               name="name"
               id="name"
-              className="px-3 py-1 border-b-[1px] border-gray-500 bg-transparent focus:outline-none"
+              className="px-3 py-1 border-b-[1px] border-gray-500 bg-transparent focus:outline-none  font-semibold text-xl"
             />
           </div>
           <div className="flex flex-row gap-5">
@@ -61,34 +61,54 @@ const Contact = () => {
                 type="tel"
                 name="phnum"
                 id="phnum"
-                className="px-3 w-full py-1 border-b-[1px] border-gray-500 bg-transparent focus:outline-none"
+                className="px-3 w-full py-1 border-b-[1px] border-gray-500 bg-transparent focus:outline-none font-semibold text-xl"
               />
             </div>
             <div className="flex flex-col">
               <label htmlFor="email" className="text-gray-400">
-                Email <span className="text-red-500 text-xs">*</span>
+                Email
               </label>
               <input
                 type="email"
                 name="email"
                 id="email"
-                className="px-3 w-full py-1 border-b-[1px] border-gray-500 bg-transparent focus:outline-none"
+                className="px-3 w-full py-1 border-b-[1px] border-gray-500 bg-transparent focus:outline-none  font-semibold text-xl"
               />
             </div>
           </div>
           <div className="flex flex-col">
             <label htmlFor="message" className="text-gray-400">
-              Message <span className="text-red-500 text-xs">*</span>
+              Company Name
             </label>
             <input
               type="text"
               name="message"
               id="message"
-              className="px-3 py-1 border-b-[1px] border-gray-500 bg-transparent focus:outline-none"
+              className="px-3 py-1 border-b-[1px] border-gray-500 bg-transparent focus:outline-none  font-semibold text-xl"
             />
           </div>
+          <div className="flex flex-col">
+            <label htmlFor="industry" className="text-gray-400">
+              Industry
+            </label>
+            <select
+              //   type="option"
+              name="industry"
+              id="industry"
+              className="px-3 py-1 border-b-[1px] border-gray-500 bg-transparent focus:outline-none text-lg  font-semibold text-xl">
+              <option className="text-black">Hospitality</option>
+              <option className="text-black">Software Development</option>
+              <option className="text-black">Education</option>
+              <option className="text-black">Legal</option>
+              <option className="text-black">Finance</option>
+              <option className="text-black">Retail</option>
+              <option className="text-black">E-Commerce</option>
+              <option className="text-black">Fintech</option>
+              <option className="text-black">Other</option>
+            </select>
+          </div>
           <button className="bg-white w-max ml-auto hover:bg-blue-500 hover:text-white duration-300 font-semibold text-black px-10 py-3 rounded-3xl mt-7">
-            Submit
+            Book Demo
           </button>
         </form>
       </div>
@@ -96,4 +116,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Booking
