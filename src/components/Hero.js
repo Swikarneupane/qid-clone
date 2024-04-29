@@ -3,7 +3,7 @@ import React from "react"
 
 const Hero = () => {
   return (
-    <div className="flex max-w-[1150px] min-h-[70vh] flex-col gap-5 items-center justify-center mb-48">
+    <div className="flex max-w-[1150px] min-h-[70vh] flex-col gap-5 items-center justify-center mb-48 px-5">
       <p className="text-[white] text-center font-bold text-[70px]">
         every person deserves to know and be known by their true identity
       </p>

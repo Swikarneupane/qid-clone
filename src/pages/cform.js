@@ -16,22 +16,26 @@ const threeItems = [
 
 const Cform = () => {
   return (
-    <div className="text-white flex flex-col gap-7 pt-64 px-5 max-w-[1150px] mx-auto">
+    <div className="text-white flex flex-col gap-7 sm:pt-64 pt-20 px-5 max-w-[1150px] mx-auto">
       <div className="flex flex-col gap-3">
-        <h2 className="font-bold text-[70px] text-[#E9E7E7]">
+        <h2 className="font-bold md:text-[70px] sm:text-[60px] text-[40px] text-[#E9E7E7]">
           <span className="bg-gradient-to-r from-[#FFB76B]  via-[#FF7C00] to-[#FF7F04] inline-block text-transparent bg-clip-text ">
             C-Form
           </span>{" "}
           Automation
         </h2>
-        <p className="font-semibold text-[30px] mb-5 text-[#FFFFFFC9]">
+        <p className="font-semibold md:text-[30px] text-[25px] mb-5 text-[#FFFFFFC9]">
           Say Goodbye to Manual C-Forms
         </p>
-        <div className="flex flex-row gap-3">
-          <button className="px-7 py-3 rounded-[50px] font-bold bg-white text-black text-[20px]">
+        <div className="flex sm:flex-row flex-col gap-3">
+          <Link
+            href="/booking"
+            className="md:px-7 px-5 md:py-3 py-2 rounded-[50px] font-bold bg-white text-black md:text-[20px] text-[15px] w-max">
             Book a demo
-          </button>
-          <button className="px-7 py-3 rounded-[50px] font-bold bg-black text-white border-[1px] border-gray-500 flex flex-row gap-1 items-center text-[20px]">
+          </Link>
+          <Link
+            href="https://chromewebstore.google.com/detail/qid-c-form-pro/afghjacdcfhoikcccemlchhmokfgobpj"
+            className="md:px-7 px-5 md:py-3 py-2 rounded-[50px] font-bold bg-black text-white border-[1px] border-gray-500 flex flex-row gap-1 items-center md:text-[20px] text-[15px] w-max">
             <svg
               viewBox="0 0 15 15"
               fill="none"
@@ -52,10 +56,10 @@ const Cform = () => {
                 fill="currentColor"></path>
             </svg>
             Get Chrome Extension
-          </button>
+          </Link>
         </div>
       </div>
-      <div className="px-1 w-[97vw]  relative -ml-[20vw] overflow-hidden">
+      <div className="px-1 md:w-[97vw] w-[90vw]  relative md:-ml-[20vw] -ml-[0vw] overflow-hidden">
         <Image
           src="/assets/cform1.png"
           width={40000}
@@ -65,33 +69,35 @@ const Cform = () => {
         />
       </div>
       <div className="my-9 flex flex-col gap-24">
-        <h3 className="font-bold text-[75px] text-[#FFFFFFC9] leading-[80px]">
+        <h3 className="font-bold md:text-[75px] sm:text-[60px] text-[45px] text-[#FFFFFFC9] md:leading-[80px] leading-tight">
           Trust us, it&apos;s truly a matter of just{" "}
           <span className="bg-gradient-to-r from-[#FFB76B]  via-[#FF7C00] to-[#FF7F04] inline-block text-transparent bg-clip-text">
             one click.
           </span>
         </h3>
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-3">
           {threeItems.map((items, index) => (
             <div
               key={index}
-              className=" bg-gradient-to-tr from-[#000000]  to-[#292929] border-[1px] border-[#474747] font-semibold text-[30px]  rounded-3xl py-6 px-8 leading-tight">
+              className=" bg-gradient-to-tr from-[#000000]  to-[#292929] border-[1px] border-[#474747] font-semibold sm:text-[30px] text-[25px]  rounded-3xl py-6 px-8 leading-tight">
               {items.text}
             </div>
           ))}
         </div>
       </div>
-      <div className="w-full flex flex-row items-center gap-20 my-9">
-        <div className="w-[50%]">
-          <h1 className="font-semibold text-[40px] leading-[48px] mb-5">
+      <div className="w-full flex md:flex-row flex-col items-center gap-20 my-9">
+        <div className="md:w-[50%] w-full">
+          <h1 className="font-semibold md:text-[40px] text-[30px] leading-[48px] mb-5">
             Elevate C-Form Processing with qid&apos;s State-of-the-Art Chrome
             Extension
           </h1>
-          <p className="font-medium text-[25px] text-[#BDBCBC] leading-[30px] mb-5">
+          <p className="font-medium md:text-[25px] text-[20px] text-[#BDBCBC] leading-[30px] mb-5">
             Simplify C-Form management like never before with qid&apos;s
             revolutionary Chrome extension.
           </p>
-          <button className="px-6 py-3 text-[20px]  rounded-[50px] font-bold bg-white text-black border-[1px] border-gray-500 flex flex-row gap-1 items-center">
+          <Link
+            href="https://chromewebstore.google.com/detail/qid-c-form-pro/afghjacdcfhoikcccemlchhmokfgobpj"
+            className="px-6 py-3 sm:text-[20px] text-[15px] rounded-[50px] font-bold bg-white text-black border-[1px] border-gray-500 w-max flex flex-row gap-1 items-center">
             <svg
               viewBox="0 0 15 15"
               fill="none"
@@ -112,7 +118,7 @@ const Cform = () => {
                 fill="currentColor"></path>
             </svg>
             Get Chrome Extension
-          </button>
+          </Link>
         </div>
         <div>
           <Image
@@ -125,8 +131,10 @@ const Cform = () => {
         </div>
       </div>
       <div className="flex flex-col gap-4 py-5 px-8 border-[1px] border-[#646464] rounded-3xl my-5 text-[#CCCCCC]">
-        <h3 className="font-bold text-[50px]">What is C-Form?</h3>
-        <p className="text-[22px]">
+        <h3 className="font-bold md:text-[50px] sm:text-[40px] text-[30px]">
+          What is C-Form?
+        </h3>
+        <p className="md:text-[22px] sm:text-[19px] text-[16px]">
           In India, a{" "}
           <a href="" target="_blank" className="underline">
             <strong className="text-white">C-Form</strong>
@@ -134,18 +142,18 @@ const Cform = () => {
           is a mandatory document required under the Foreigners&apos;
           Registration Act, 1946.
         </p>
-        <p className="text-[22px]">
+        <p className="md:text-[22px] sm:text-[19px] text-[16px]">
           It serves as a record of the stay of foreign nationals within the
           country.
         </p>
-        <p className="text-[22px]">
+        <p className="md:text-[22px] sm:text-[19px] text-[16px]">
           Hotels, guesthouses, and other accommodation providers are legally
           obligated to submit C-Forms to local authorities for every foreign
           guest&apos;s stay.
         </p>
         <Link
           href="/cform"
-          className=" px-5 py-3 font-bold text-[20px] w-max border-[1px] border-gray-500 rounded-3xl">
+          className=" px-5 py-3 font-bold md:text-[20px] text-[15px] w-max border-[1px] border-gray-500 rounded-3xl">
           Read More
         </Link>
       </div>

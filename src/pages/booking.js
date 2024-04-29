@@ -1,40 +1,23 @@
 import React from "react"
 
-const list = [
-  {
-    name: "Quick Guest Check-In",
-    gradient: "#006645",
-  },
-  {
-    name: "C-Form Automation",
-    gradient: "#",
-  },
-  {
-    name: "",
-    gradient: "#000000",
-  },
-  {
-    name: "QR Based Customer Onboarding",
-    gradient: "#000000",
-  },
-]
-
 const Booking = () => {
   return (
-    <div className="text-white px-5 min-h-[95vh] flex flex-row items-center gap-10 max-w-[1150px] mx-auto">
-      <div className="w-[60%] flex flex-col gap-3">
-        <h2 className="font-bold text-[80px]">Book a Demo</h2>
-        <p className="text-[28px] text-[#FFFFFFC9] leading-tight mb-5">
+    <div className="text-white py-16 px-5 min-h-[95vh] flex md:flex-row flex-col items-center gap-10 max-w-[1150px] mx-auto">
+      <div className="md:w-[60%] w-full flex flex-col gap-3">
+        <h2 className="font-bold md:text-[80px] sm:text-[65px] text-[55px] leading-tight">
+          Book a Demo
+        </h2>
+        <p className="md:text-[28px] text-[22px] text-[#FFFFFFC9] leading-tight mb-5">
           Discover Qid - Your Partner in Secure Identity Management
         </p>
 
-        <div className="grid grid-cols-3 gap-5 text-[#A8A8A8]">
+        <div className="grid sm:grid-cols-3 grid-cols-1 gap-5 text-[#A8A8A8]">
           <span
             className={`border-[1px]  rounded-xl text-[#FFFFFFC9] mr-5 w-max py-[7px] px-[10px] border-[#4D4D4D] bg-gradient-to-br  from-[#353535C7] via-[#353535C7]  to-[#006645]`}>
             Quick Guest Check-In
           </span>
           <span
-            className={`border-[1px] rounded-xl text-[#FFFFFFC9] ml-2 w-max py-[7px] px-[10px] border-[#4D4D4D] bg-gradient-to-br from-[#353535C7] via-[#353535C7]  to-[#B45B0F]`}>
+            className={`border-[1px] rounded-xl text-[#FFFFFFC9] sm:ml-2  w-max py-[7px] px-[10px] border-[#4D4D4D] bg-gradient-to-br from-[#353535C7] via-[#353535C7]  to-[#B45B0F]`}>
             C-Form Automation
           </span>
           <span
@@ -47,12 +30,12 @@ const Booking = () => {
           </span>
         </div>
 
-        <hr className="my-9 opacity-35 w-[75%]" />
+        <hr className="my-9 opacity-35 md:w-[75%] w-full" />
         <p className="text-blue-400 font-semibold text-[32px]">
           Trusted by 30,000+ Users
         </p>
       </div>
-      <div className="p-10 w-[50%]  border-[1px] rounded-3xl font-medium border-[#5E5E5E]">
+      <div className="sm:p-10 p-5 md:w-[50%] w-full border-[1px] rounded-3xl font-medium border-[#5E5E5E]">
         <form className="flex flex-col gap-7 ">
           <div className="flex flex-col font-medium">
             <label htmlFor="name" className="text-[#B8B8B8]">
@@ -65,7 +48,7 @@ const Booking = () => {
               className="px-3 py-1 border-b-[1px] border-gray-500 bg-transparent focus:outline-none  font-semibold text-xl"
             />
           </div>
-          <div className="flex flex-row gap-5">
+          <div className="flex sm:flex-row flex-col gap-5">
             <div className="flex flex-col">
               <label htmlFor="phnum" className="text-[#B8B8B8]">
                 Phone Number

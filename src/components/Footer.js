@@ -44,18 +44,18 @@ const Footer = () => {
   const path = router.pathname
   return (
     <div className="max-w-[1150px] w-full px-5 py-5 mx-auto">
-      <div className="flex flex-row items-center justify-between py-16">
+      <div className="flex md:flex-row flex-col md:items-center items-start justify-between py-16 md:gap-1 sm:gap-9 gap-12">
         <div className="text-[#C4C5C5] text-[50px] italic font-bold">qid</div>
-        <div className="flex flex-row gap-24">
+        <div className="flex md:flex-row flex-col md:gap-24 gap-10">
           <div>
-            <h2 className="text-[#FEFFFE] mb-7 font-bold text-2xl">
+            <h2 className="text-[#FEFFFE] md:mb-7 mb-4 font-bold md:text-2xl text-xl">
               Download App
             </h2>
             <ul>
               {downloadLists.map((item, index) => (
                 <li
                   key={index}
-                  className={`text-[#AEAB9E] mb-7 font-medium text-lg hover:text-white duration-300 cursor-pointer ${
+                  className={`text-[#AEAB9E] md:mb-7 mb-3 font-medium md:text-lg text-base hover:text-white duration-300 cursor-pointer ${
                     path == item.href
                       ? "text-white"
                       : "hover:text-white text-[#AEAB9E]"
@@ -66,12 +66,14 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="text-[#FEFFFE] mb-7 font-bold text-2xl">Legal</h2>
+            <h2 className="text-[#FEFFFE] md:mb-7 mb-4 font-bold md:text-2xl text-xl">
+              Legal
+            </h2>
             <ul>
               {legalLists.map((item, index) => (
                 <li
                   key={index}
-                  className={`text-[#AEAB9E] mb-7 font-medium text-lg hover:text-white duration-300 cursor-pointer ${
+                  className={`text-[#AEAB9E] md:mb-7 mb-3 font-medium md:text-lg text-base hover:text-white duration-300 cursor-pointer ${
                     path == item.href
                       ? "text-white"
                       : "hover:text-white text-[#AEAB9E]"
@@ -86,7 +88,9 @@ const Footer = () => {
       <hr className=" w-[100%] my-5 bg-[#abb8c3] text-[#abb8c3]  opacity-35" />
 
       <div className="text-[#FEFFFE] flex flex-row items-center justify-between">
-        <p className="text-lg">Oneqid Technologies Private Limited</p>
+        <p className="md:text-lg sm:text-base text-sm">
+          Oneqid Technologies Private Limited
+        </p>
         {/* <Link className="bg-white w-max h-max px-2 rounded-2xl" href="/"> */}
         <Link
           href="https://www.linkedin.com/company/oneqid/"

@@ -4,8 +4,8 @@ import React from "react"
 
 const Account = () => {
   return (
-    <div className="max-w-[1150px] text-white flex flex-row max-h[100vh] gap-3 items-center">
-      <div className="w-[50%]">
+    <div className="max-w-[1150px] text-white flex md:flex-row flex-col max-h[100vh] md:gap-3 gap-20 items-center px-5">
+      <div className="md:w-[50%] w-full">
         <h2 className="font-bold text-[70px]">
           <span className="bg-gradient-to-r from-[#FFB76B]  via-[#FF7C00] to-[#FF7F04] inline-block text-transparent bg-clip-text ">
             Secure
@@ -28,7 +28,7 @@ const Account = () => {
           </svg>
         </Link>
       </div>
-      <div className="w-[45%]">
+      <div className="md:w-[45%] w-full">
         <Image
           src="/assets/home1.png"
           height={500}

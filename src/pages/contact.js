@@ -2,10 +2,12 @@ import React from "react"
 
 const Contact = () => {
   return (
-    <div className="text-white px-5 min-h-[95vh] flex flex-row items-center gap-10 max-w-[1150px] mx-auto">
-      <div className="w-[60%] flex flex-col gap-3">
-        <h2 className="font-bold text-[80px]">Contact Us</h2>
-        <p className="text-[28px] text-[#FFFFFFC9] leading-tight mb-5">
+    <div className="text-white px-5 min-h-[95vh] flex md:flex-row flex-col md:py-5 py-10  items-center gap-10 max-w-[1150px] mx-auto">
+      <div className="md:w-[60%] w-full flex flex-col gap-3">
+        <h2 className="font-bold md:text-[80px] sm:text-[65px] text-[55px]  leading-tight">
+          Contact Us
+        </h2>
+        <p className="md:text-[28px] text-[22px] text-[#FFFFFFC9] leading-tight mb-5">
           Discover Qid – Your Partner in Secure Identity Management
         </p>
         <p className="flex flex-row items-center gap-3 font-bold text-lg">
@@ -34,12 +36,12 @@ const Contact = () => {
           </svg>
           +91 960 640 640 4
         </p>
-        <hr className="my-9 opacity-35 w-[75%]" />
+        <hr className="my-9 opacity-35 md:w-[75%] w-full" />
         <p className="text-blue-400 font-semibold text-[32px]">
           Trusted by 25,000+ Users
         </p>
       </div>
-      <div className="px-10 w-[50%] py-10 border-[1px] rounded-3xl font-medium border-[#5E5E5E]">
+      <div className="sm:px-10 px-5 md:w-[50%] w-full md:py-10 py-8 border-[1px] rounded-3xl font-medium border-[#5E5E5E]">
         <form className="flex flex-col gap-7 text-[#B8B8B8]">
           <div className="flex flex-col font-medium">
             <label htmlFor="name" className="text-lg">
@@ -52,7 +54,7 @@ const Contact = () => {
               className="px-3  border-b-[1px] border-gray-500 bg-transparent focus:outline-none py-2 text-xl"
             />
           </div>
-          <div className="flex flex-row gap-5">
+          <div className="flex sm:flex-row flex-col gap-5">
             <div className="flex flex-col">
               <label htmlFor="phnum" className="text-lg">
                 Phone Number
