@@ -43,10 +43,9 @@ const Footer = () => {
   const router = useRouter()
   const path = router.pathname
   return (
-    <div className="w-[100%] px-5 py-5">
-      <hr className="bg-[#C4C5C5] text-[#C4C5C5] w-[100%] mb-5" />
-      <div className="flex flex-row items-center justify-between">
-        <div className="text-[#C4C5C5] text-4xl italic font-bold">qid</div>
+    <div className="max-w-[1150px] w-full px-5 py-5 mx-auto">
+      <div className="flex flex-row items-center justify-between py-16">
+        <div className="text-[#C4C5C5] text-[50px] italic font-bold">qid</div>
         <div className="flex flex-row gap-24">
           <div>
             <h2 className="text-[#FEFFFE] mb-7 font-bold text-2xl">
@@ -84,7 +83,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="bg-[#C4C5C5] text-[#C4C5C5] w-[100%] my-5" />
+      <hr className=" w-[100%] my-5 bg-[#abb8c3] text-[#abb8c3]  opacity-35" />
 
       <div className="text-[#FEFFFE] flex flex-row items-center justify-between">
         <p className="text-lg">Oneqid Technologies Private Limited</p>

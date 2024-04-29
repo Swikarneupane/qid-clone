@@ -2,7 +2,7 @@ import React from "react"
 
 const Shipping = () => {
   return (
-    <div className=" pt-40 px-5 pb-5 min-h-[70vh]">
+    <div className=" pt-40 px-5 pb-5 min-h-[70vh] max-w-[1150px] mx-auto">
       <div className="flex flex-col text-white text-[17px] gap-9 font-semibold">
         <div>
           <h1 className="font-bold text-[60px]">Shipping and Return Policy</h1>

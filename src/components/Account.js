@@ -4,10 +4,13 @@ import React from "react"
 
 const Account = () => {
   return (
-    <div className="w-full text-white flex flex-row max-h[100vh] gap-3 items-center">
+    <div className="max-w-[1150px] text-white flex flex-row max-h[100vh] gap-3 items-center">
       <div className="w-[50%]">
-        <h2 className="font-extrabold text-[70px]">
-          Secure, easy, and always with you.
+        <h2 className="font-bold text-[70px]">
+          <span className="bg-gradient-to-r from-[#FFB76B]  via-[#FF7C00] to-[#FF7F04] inline-block text-transparent bg-clip-text ">
+            Secure
+          </span>
+          , easy, and always with you.
         </h2>
         <Link
           href="/app"

@@ -16,10 +16,15 @@ const threeItems = [
 
 const Cform = () => {
   return (
-    <div className="text-white flex flex-col gap-7 pt-64 px-5">
+    <div className="text-white flex flex-col gap-7 pt-64 px-5 max-w-[1150px] mx-auto">
       <div className="flex flex-col gap-3">
-        <h2 className="font-bold text-[70px]">C-Form Automation</h2>
-        <p className="font-semibold text-[30px] mb-5">
+        <h2 className="font-bold text-[70px] text-[#E9E7E7]">
+          <span className="bg-gradient-to-r from-[#FFB76B]  via-[#FF7C00] to-[#FF7F04] inline-block text-transparent bg-clip-text ">
+            C-Form
+          </span>{" "}
+          Automation
+        </h2>
+        <p className="font-semibold text-[30px] mb-5 text-[#FFFFFFC9]">
           Say Goodbye to Manual C-Forms
         </p>
         <div className="flex flex-row gap-3">
@@ -56,7 +61,7 @@ const Cform = () => {
           width={1000}
           height={50}
           alt="C-Form"
-          className="w-full h-full"
+          className="w-[100vw] h-full"
         />
       </div>
       <div className="my-9">
@@ -83,7 +88,7 @@ const Cform = () => {
             Simplify C-Form management like never before with qid&apos;s
             revolutionary Chrome extension.
           </p>
-          <button className="px-6 py-3 text-[20px] gap-2 rounded-3xl font-bold bg-white text-black border-[1px] border-gray-500 flex flex-row gap-1 items-center">
+          <button className="px-6 py-3 text-[20px]  rounded-3xl font-bold bg-white text-black border-[1px] border-gray-500 flex flex-row gap-1 items-center">
             <svg
               viewBox="0 0 15 15"
               fill="none"
@@ -116,7 +121,7 @@ const Cform = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-5 border-[1px] border-gray-500 rounded-lg mt-5">
+      <div className="flex flex-col gap-4 p-5 border-[1px] border-gray-500 rounded-lg my-5">
         <h3 className="font-bold text-[50px]">What is C-Form?</h3>
         <p className="text-[22px]">
           In India, a{" "}

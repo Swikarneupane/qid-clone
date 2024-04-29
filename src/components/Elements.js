@@ -2,7 +2,7 @@ import React from "react"
 
 const Elements = () => {
   return (
-    <div className="text-white">
+    <div className="text-white max-w-[1150px]">
       {/* Two base elements part  */}
       <div className="flex flex-row items-center justify-between">
         <h2 className="w-[30%] text-[40px] font-bold">

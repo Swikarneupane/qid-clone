@@ -2,11 +2,11 @@ import React from "react"
 
 const Booking = () => {
   return (
-    <div className="text-white px-10 pt-60 pb-36 flex flex-row items-center gap-8">
+    <div className="text-white px-10 pt-60 pb-36 flex flex-row items-center gap-8 max-w-[1150px]">
       <div className="w-[50%] flex flex-col gap-3">
         <h2 className="font-bold text-[50px]">Book a Demo</h2>
         <p className="text-[25px]">
-          Discover Qid – Your Partner in Secure Identity Management
+          Discover Qid - Your Partner in Secure Identity Management
         </p>
         {/* <p className="flex flex-row items-center gap-3 font-bold">
           <svg
@@ -95,7 +95,7 @@ const Booking = () => {
               //   type="option"
               name="industry"
               id="industry"
-              className="px-3 py-1 border-b-[1px] border-gray-500 bg-transparent focus:outline-none text-lg  font-semibold text-xl">
+              className="px-3 py-1 border-b-[1px] border-gray-500 bg-transparent focus:outline-none text-lg  font-semibold">
               <option className="text-black">Hospitality</option>
               <option className="text-black">Software Development</option>
               <option className="text-black">Education</option>

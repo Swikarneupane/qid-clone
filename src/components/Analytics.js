@@ -4,9 +4,9 @@ import React from "react"
 
 const Analytics = () => {
   return (
-    <div className="text-white flex flex-col gap-5 py-8 w-[100%]">
+    <div className="text-white flex flex-col gap-5 py-8 max-w-[1150px]">
       <div className="flex flex-row gap-5">
-        <div className="flex flex-col w-[25%] gap-5 border-[1px] border-gray-700 p-5 rounded-xl">
+        <div className="flex flex-col w-[25%] gap-5 border-[1px] border-[#7D7D7D5E]  p-5 rounded-xl bg-gradient-to-r from-[#212121D6]   to-[#09090978]">
           <Image
             src="/assets/home3.png"
             width={400}
@@ -15,12 +15,12 @@ const Analytics = () => {
             className="rounded-lg w-full h-full"
           />
           <h3 className="text-[25px] font-semibold">Collect IDs with QR</h3>
-          <p className="font-medium text-[16px] text-gray-300">
-            Easy to setup QR code stand
+          <p className="font-medium text-[16px] text-[#9C9C9C]">
+            Easy to setup QR code sttext-[#9C9C9C]{" "}
           </p>
         </div>
 
-        <div className="flex flex-col w-[75%] gap-5 border-[1px] border-gray-700 p-5 rounded-xl">
+        <div className="flex flex-col w-[75%] gap-5 border-[1px] border-[#7D7D7D5E] p-5 rounded-xl bg-gradient-to-r from-[#212121D6]   to-[#09090978]">
           <h3 className="text-[25px] font-semibold">Business Analytics</h3>
           <Image
             src="/assets/home2.png"
@@ -29,37 +29,39 @@ const Analytics = () => {
             alt="QR"
             className="rounded-md w-full h-full"
           />
-          <p className="font-medium text-[16px] text-gray-300">
+          <p className="font-medium text-[16px] text-[#9C9C9C]">
             Unlock the power of data with qid – your ultimate tool for
             comprehensive business analytics.
           </p>
         </div>
       </div>
       <div className="flex flex-row gap-5">
-        <div className="flex flex-col w-[25%] gap-5 border-[1px] border-gray-700 p-5 rounded-xl">
+        <div className="flex flex-col w-[25%] gap-5 border-[1px] border-[#7D7D7D5E] p-5 rounded-xl bg-gradient-to-r from-[#212121D6]   to-[#09090978]">
           <h3 className="text-[25px] font-semibold">Customized Interface</h3>
-          <p className="font-medium text-[16px] text-gray-300">
+          <p className="font-medium text-[16px] text-[#9C9C9C]">
             Tailor qid’s interface to perfectly align with your brand, creating
             a seamless and personalized user experience.
           </p>
         </div>
-        <div className="flex flex-col w-[37.5%] gap-5 border-[1px] border-gray-700 p-5 rounded-xl">
+        <div className="flex flex-col w-[37.5%] gap-5 border-[1px] border-[#7D7D7D5E] p-5 rounded-xl bg-gradient-to-r from-[#212121D6]   to-[#09090978]">
           <h3 className="text-[25px] font-semibold">Developer APIs</h3>
-          <p className="font-medium text-[16px] text-gray-300">
+          <p className="font-medium text-[16px] text-[#9C9C9C]">
             Supercharge your applications with qid’s robust developer APIs,
             enabling you to effortlessly leverage the full potential of our
             platform and create unique, personalized experiences for your users.
           </p>
         </div>
-        <div className="flex flex-col w-[37.5%] gap-5 border-[1px] border-gray-700 p-5 rounded-xl">
+        <div className="flex flex-col w-[37.5%] gap-5 border-[1px] border-[#7D7D7D5E] p-5 rounded-xl bg-gradient-to-r from-[#212121D6]   to-[#09090978]">
           <h3 className="text-[25px] font-semibold">One-Click C-Form</h3>
-          <p className="font-medium text-[16px] text-gray-300">
+          <p className="font-medium text-[16px] text-[#9C9C9C]">
             Simplify C-Form filling with qid’s 1-Click solution, automating the
             process and saving you time while ensuring compliance.{" "}
           </p>
         </div>
       </div>
-      <Link href="https://business.oneqid.com/" className="bg-white mx-auto text-black w-max flex flex-row items-center gap-2 py-4 px-6 rounded-3xl font-bold text-lg">
+      <Link
+        href="https://business.oneqid.com/"
+        className="bg-white mx-auto text-black w-max flex flex-row items-center gap-2 py-4 px-6 rounded-3xl font-bold text-lg ">
         Create Business Account
         <svg
           viewBox="0 0 15 15"

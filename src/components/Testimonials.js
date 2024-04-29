@@ -1,5 +1,5 @@
 import Image from "next/image"
-import React, { useRef, useEffect, useState } from "react"
+import React from "react"
 import { Navigation, A11y, Autoplay } from "swiper/modules"
 
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -10,7 +10,7 @@ import "swiper/css/pagination"
 import "swiper/css/scrollbar"
 import "swiper/css/autoplay"
 
-const testimonials = [
+const testimonialList = [
   {
     src: "/assets/testimonials/lavish sharma.jpg",
     name: "Lavish Sharma",
@@ -52,158 +52,62 @@ const testimonials = [
 ]
 
 const Testimonials = () => {
-  const parentRef = useRef(null)
-  const childRef = useRef(null)
-  const [currentIndex, setCurrentIndex] = useState(0)
-  function handleArrowLeft() {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-    )
-  }
-  function handleArrowRight() {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-    )
-  }
-  useEffect(() => {
-    const childHeight = childRef.current.offsetHeight
-
-    parentRef.current.style.height = `${childHeight}px`
-  }, [])
-
-  useEffect(() => {
-    // setTimeout(() => {
-    //   setCurrentIndex((prevIndex) =>
-    //     prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-    //   )
-    // }, 7 * 1000)
-  })
-
   return (
-    <div className="text-white">
+    <div className="text-white  max-w-[1150px] mt-12">
       <div className=" flex flex-col gap-3 items-center justify-center">
-        <h3>Identified by qid</h3>
-        <p className="text-center">
+        <h3 className="font-bold text-[65px]">
+          <span className="bg-gradient-to-r from-[#FFB76B]  via-[#FF7C00] to-[#FF7F04] inline-block text-transparent bg-clip-text ">
+            Identified
+          </span>{" "}
+          by <span className="italic">qid</span>
+        </h3>
+        <p className="text-center font-semibold text-[23px]">
           Let’s dive into the real stories of how our service has touched the
           lives of our customers.
         </p>
       </div>
-      {/* Testimonial slider part */}
-      <div className="flex flex-row items-center gap-5">
-        <div className="text-2xl cursor-pointer" onClick={handleArrowLeft}>
-          {"<"}
-        </div>
-        <div
-          ref={parentRef}
-          className="grid xl:grid-cols-3 grid-cols-1 overflow-hidden gap-5 my-5 w-full">
-          <div
-            ref={childRef}
-            className="p-7 border-[1px] border-gray-500 gap-5 flex flex-col rounded-lg w-full">
-            <div className="w-[120px] h-[120px] rounded-lg">
-              <Image
-                src={testimonials[currentIndex].src}
-                width={500}
-                height={200}
-                alt={testimonials[currentIndex].name}
-                // objectFit="contain"
-                className="rounded-[50%] w-full h-full object-cover"
-              />
-            </div>
-            <p>{testimonials[currentIndex].message}</p>
-            <div className="text-sm text-gray-500">
-              <p>{testimonials[currentIndex].name}</p>
-              <p>{testimonials[currentIndex].position}</p>
-            </div>
-          </div>
-        </div>
-        <div className="text-2xl cursor-pointer" onClick={handleArrowRight}>
-          {">"}
-        </div>
+      <div className="flex flex-row mb-16">
+        <Swiper
+          modules={[Navigation, A11y, Autoplay]}
+          autoplay={{ delay: 4000 }}
+          // navigation={true}
+          loop={true}
+          breakpoints={{
+            360: {
+              slidesPerView: 1,
+            },
+
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+          className="flex flex-row gap-5 h-full cursor-grab">
+          {testimonialList.map((item, index) => (
+            <SwiperSlide
+              key={index}
+              className="flex -ml-2  my-5 text-white bg-[#050505] h-full mr-4">
+              <div className="p-7 border-[1px] border-[#1D1D1D]  flex flex-col rounded-lg gap-5">
+                <div className="w-[120px] h-[120px] rounded-lg">
+                  <Image
+                    src={item.src}
+                    width={500}
+                    height={200}
+                    alt={item.name}
+                    className="rounded-[50%] w-full h-full object-cover"
+                  />
+                </div>
+                <p className="font-semibold text-[23px]">{item.message}</p>
+                <div className="text-sm text-[#707070]">
+                  <p className="font-semibold text-[18px] mb-2">{item.name}</p>
+                  <p className="text-[15px]">{item.position}</p>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   )
 }
 
 export default Testimonials
-
-
-
-//   return (
-//     <>
-//       <section
-//         id="sponsors"
-//         className="flex flex-col w-[100%] h-max text-center  justify-around items-center bg-black text-white  "
-//       >
-//         <div className=" text-center mt-4 ">
-//           <h3 className="font-extrabold text-[40px]  text-center text-[white] border-[#B7002B] border-b-2 mb-10">
-//             Our <span className="text-[#B7002B]">Sponsors</span>
-//           </h3>
-//         </div>
-//         <div className="flex flex-row mb-16">
-//           <Swiper
-//             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-//             autoplay={{ delay: 2000 }}
-//             // freeMode={true}
-//             scrollbar={{ draggable: true }}
-//             parallax
-//             // slidesPerView={3}
-//             breakpoints={{
-//               360: {
-//                 slidesPerView: 2,
-//               },
-//               680: {
-//                 slidesPerView: 3,
-//               },
-//               1200: {
-//                 slidesPerView: 4,
-//               },
-//             }}
-//             className="flex flex-col h-max w-[90vw] "
-//           >
-//             {loading ? (
-//               <div
-//                 // key={i}
-//                 className="flex h-[80%] w-[100%] justify-between "
-//               >
-//                 {loader.map((item, i) => (
-//                   <Skeleton
-//                     key={i}
-//                     className=" h-[12rem]"
-//                     width={'14rem'}
-//                     baseColor="#8f8c8c"
-//                     highlightColor="#bbbabaff"
-//                     borderRadius={'1rem'}
-//                   />
-//                 ))}
-//               </div>
-//             ) : (
-//               <>
-//                 {sponsers &&
-//                   sponsers.map((sponser) => (
-//                     <SwiperSlide
-//                       key={sponser._id}
-//                       className="flex items-center justify-center h-[80%] w-[80%] "
-//                     >
-//                       <div className="flex justify-center ml-4">
-//                         <Image
-//                           src={`${process.env.NEXT_PUBLIC_SERVER_ADDRESS}/${sponser.image}`}
-//                           width={200}
-//                           height={200}
-//                           alt={sponser ? sponser.name : 'Sponsers'}
-//                           className="h-[10rem] md:h-[14rem] lg:h-[16rem] w-max object-contain z-[50]"
-//                           unoptimized
-//                           priority
-//                         />
-//                       </div>
-//                     </SwiperSlide>
-//                   ))}
-//               </>
-//             )}
-//           </Swiper>
-//         </div>
-//       </section>
-//     </>
-//   );
-// };
-
-// export default Sponsors;

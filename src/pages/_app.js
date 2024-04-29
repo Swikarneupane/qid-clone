@@ -7,16 +7,26 @@ const raleway = Raleway({ subsets: ["latin"] })
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className="bg-[#0B0A0B]">
-      <div
-        className={`bg-[#0B0A0B] max-w-[1150px] mx-auto min-h-screen ${raleway.className} `}>
-        <div>
-          <Navbar />
-        </div>
-        <Component {...pageProps} />
-        <div className="flex w-[100%] mr-0 pt-3">
-          <Footer />
-        </div>
+    // <div className="bg-[#0B0A0B]">
+    //   <div className={` min-h-screen ${raleway.className} bg-[#0B0A0B]`}>
+    //     <div className="py-10 ">
+    //       <Navbar />
+    //     </div>
+    //     <Component {...pageProps} />
+    //     <div className="flex flex-col  pt-3 mx-auto">
+    //       <hr className="bg-[#C4C5C5] text-[#C4C5C5] mb-5" />
+    //       <Footer />
+    //     </div>
+    //   </div>
+    // </div>
+    <div className={`${raleway.className} bg-[#0B0A0B]`}>
+      <div className={`w-[100%] flex justify-center pt-4 -mt-2 `}>
+        <Navbar />
+      </div>
+      <Component {...pageProps} />
+      <div className="w-[100%] flex flex-col justify-center">
+        <hr className="bg-[#abb8c3] text-[#abb8c3] mb-5 opacity-35" />
+        <Footer />
       </div>
     </div>
   )

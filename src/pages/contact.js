@@ -2,13 +2,13 @@ import React from "react"
 
 const Contact = () => {
   return (
-    <div className="text-white px-16 pt-60 pb-36 flex flex-row items-center gap-8">
-      <div className="w-[40%] flex flex-col gap-3">
-        <h2 className="font-bold text-[50px]">Contact Us</h2>
-        <p className="text-[25px]">
+    <div className="text-white px-5 min-h-[95vh] flex flex-row items-center gap-10 max-w-[1150px] mx-auto">
+      <div className="w-[60%] flex flex-col gap-5">
+        <h2 className="font-bold text-[70px]">Contact Us</h2>
+        <p className="text-[28px]">
           Discover Qid – Your Partner in Secure Identity Management
         </p>
-        <p className="flex flex-row items-center gap-3 font-bold">
+        <p className="flex flex-row items-center gap-3 font-bold text-lg">
           <svg
             viewBox="0 0 15 15"
             fill="none"
@@ -21,7 +21,7 @@ const Contact = () => {
           </svg>
           contact@oneqid.com
         </p>
-        <p className="flex flex-row items-center gap-3 font-bold">
+        <p className="flex flex-row items-center gap-3 font-bold text-lg">
           <svg
             viewBox="0 0 15 15"
             fill="none"
@@ -39,7 +39,7 @@ const Contact = () => {
           Trusted by 25,000+ Users
         </p>
       </div>
-      <div className="px-8 w-[60%] py-8 border-[1px] rounded-3xl font-medium">
+      <div className="px-8 w-[50%] py-8 border-[1px] rounded-3xl font-medium">
         <form className="flex flex-col gap-7">
           <div className="flex flex-col font-medium">
             <label htmlFor="name" className="text-gray-400">
