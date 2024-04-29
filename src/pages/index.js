@@ -5,6 +5,7 @@ import { Inter } from "next/font/google"
 import ForBusiness from "@/components/ForBusiness"
 import Analytics from "@/components/Analytics"
 import Testimonials from "@/components/Testimonials"
+import Image from "next/image"
 
 const inter = Inter({ subsets: ["latin"] })
 

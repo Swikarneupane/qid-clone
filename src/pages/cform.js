@@ -10,7 +10,7 @@ const threeItems = [
     text: "Qid's AI engine extracts details like Passport Number, Visa Number, Name, Country, and Photos from the images.",
   },
   {
-    text: "Go to the C-Form website Open the qid C-Form Pro Chrome plugin.Select the guest. Done!",
+    text: "Go to the C-Form website Open the qid C-Form Pro Chrome plugin. Select the guest. Done!",
   },
 ]
 
@@ -28,10 +28,10 @@ const Cform = () => {
           Say Goodbye to Manual C-Forms
         </p>
         <div className="flex flex-row gap-3">
-          <button className="px-7 py-3 rounded-3xl font-bold bg-white text-black text-[20px]">
+          <button className="px-7 py-3 rounded-[50px] font-bold bg-white text-black text-[20px]">
             Book a demo
           </button>
-          <button className="px-7 py-3 rounded-3xl font-bold bg-black text-white border-[1px] border-gray-500 flex flex-row gap-1 items-center text-[20px]">
+          <button className="px-7 py-3 rounded-[50px] font-bold bg-black text-white border-[1px] border-gray-500 flex flex-row gap-1 items-center text-[20px]">
             <svg
               viewBox="0 0 15 15"
               fill="none"
@@ -55,24 +55,27 @@ const Cform = () => {
           </button>
         </div>
       </div>
-      <div className="px-1">
+      <div className="px-1 w-[97vw]  relative -ml-[20vw] overflow-hidden">
         <Image
           src="/assets/cform1.png"
-          width={1000}
-          height={50}
+          width={40000}
+          height={5000}
           alt="C-Form"
-          className="w-[100vw] h-full"
+          className="w-[990vw]"
         />
       </div>
-      <div className="my-9">
-        <h3 className="font-bold text-[70px]">
-          Trust us, it&apos;s truly a matter of just one click.
+      <div className="my-9 flex flex-col gap-24">
+        <h3 className="font-bold text-[75px] text-[#FFFFFFC9] leading-[80px]">
+          Trust us, it&apos;s truly a matter of just{" "}
+          <span className="bg-gradient-to-r from-[#FFB76B]  via-[#FF7C00] to-[#FF7F04] inline-block text-transparent bg-clip-text">
+            one click.
+          </span>
         </h3>
         <div className="grid grid-cols-3 gap-3">
           {threeItems.map((items, index) => (
             <div
               key={index}
-              className=" bg-gray-900 border-[1px] font-semibold text-[30px] border-gray-300 rounded-lg py-5 px-6">
+              className=" bg-gradient-to-tr from-[#000000]  to-[#292929] border-[1px] border-[#474747] font-semibold text-[30px]  rounded-3xl py-6 px-8 leading-tight">
               {items.text}
             </div>
           ))}
@@ -80,15 +83,15 @@ const Cform = () => {
       </div>
       <div className="w-full flex flex-row items-center gap-20 my-9">
         <div className="w-[50%]">
-          <h1 className="font-medium text-[40px]">
+          <h1 className="font-semibold text-[40px] leading-[48px] mb-5">
             Elevate C-Form Processing with qid&apos;s State-of-the-Art Chrome
             Extension
           </h1>
-          <p className="font-medium text-[25px]">
+          <p className="font-medium text-[25px] text-[#BDBCBC] leading-[30px] mb-5">
             Simplify C-Form management like never before with qid&apos;s
             revolutionary Chrome extension.
           </p>
-          <button className="px-6 py-3 text-[20px]  rounded-3xl font-bold bg-white text-black border-[1px] border-gray-500 flex flex-row gap-1 items-center">
+          <button className="px-6 py-3 text-[20px]  rounded-[50px] font-bold bg-white text-black border-[1px] border-gray-500 flex flex-row gap-1 items-center">
             <svg
               viewBox="0 0 15 15"
               fill="none"
@@ -121,12 +124,12 @@ const Cform = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-5 border-[1px] border-gray-500 rounded-lg my-5">
+      <div className="flex flex-col gap-4 py-5 px-8 border-[1px] border-[#646464] rounded-3xl my-5 text-[#CCCCCC]">
         <h3 className="font-bold text-[50px]">What is C-Form?</h3>
         <p className="text-[22px]">
           In India, a{" "}
           <a href="" target="_blank" className="underline">
-            <strong>C-Form</strong>
+            <strong className="text-white">C-Form</strong>
           </a>{" "}
           is a mandatory document required under the Foreigners&apos;
           Registration Act, 1946.

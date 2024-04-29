@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }) {
     //     </div>
     //   </div>
     // </div>
-    <div className={`${raleway.className} bg-[#0B0A0B]`}>
+    <div className={`${raleway.className} bg-[#0B0A0B] `}>
       <div className={`w-[100%] flex justify-center pt-4 -mt-2 `}>
         <Navbar />
       </div>

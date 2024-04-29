@@ -3,9 +3,9 @@ import React from "react"
 const Contact = () => {
   return (
     <div className="text-white px-5 min-h-[95vh] flex flex-row items-center gap-10 max-w-[1150px] mx-auto">
-      <div className="w-[60%] flex flex-col gap-5">
-        <h2 className="font-bold text-[70px]">Contact Us</h2>
-        <p className="text-[28px]">
+      <div className="w-[60%] flex flex-col gap-3">
+        <h2 className="font-bold text-[80px]">Contact Us</h2>
+        <p className="text-[28px] text-[#FFFFFFC9] leading-tight mb-5">
           Discover Qid – Your Partner in Secure Identity Management
         </p>
         <p className="flex flex-row items-center gap-3 font-bold text-lg">
@@ -34,57 +34,57 @@ const Contact = () => {
           </svg>
           +91 960 640 640 4
         </p>
-        <hr />
+        <hr className="my-9 opacity-35 w-[75%]" />
         <p className="text-blue-400 font-semibold text-[32px]">
           Trusted by 25,000+ Users
         </p>
       </div>
-      <div className="px-8 w-[50%] py-8 border-[1px] rounded-3xl font-medium">
-        <form className="flex flex-col gap-7">
+      <div className="px-10 w-[50%] py-10 border-[1px] rounded-3xl font-medium border-[#5E5E5E]">
+        <form className="flex flex-col gap-7 text-[#B8B8B8]">
           <div className="flex flex-col font-medium">
-            <label htmlFor="name" className="text-gray-400">
-              Name <span className="text-red-500 text-xs">*</span>
+            <label htmlFor="name" className="text-lg">
+              Name <span className="text-red-500 text-base">*</span>
             </label>
             <input
               type="text"
               name="name"
               id="name"
-              className="px-3 py-1 border-b-[1px] border-gray-500 bg-transparent focus:outline-none"
+              className="px-3  border-b-[1px] border-gray-500 bg-transparent focus:outline-none py-2 text-xl"
             />
           </div>
           <div className="flex flex-row gap-5">
             <div className="flex flex-col">
-              <label htmlFor="phnum" className="text-gray-400">
+              <label htmlFor="phnum" className="text-lg">
                 Phone Number
               </label>
               <input
                 type="tel"
                 name="phnum"
                 id="phnum"
-                className="px-3 w-full py-1 border-b-[1px] border-gray-500 bg-transparent focus:outline-none"
+                className="px-3 w-full  border-b-[1px] border-gray-500 bg-transparent focus:outline-none py-2 text-xl"
               />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="email" className="text-gray-400">
+              <label htmlFor="email" className="text-lg">
                 Email <span className="text-red-500 text-xs">*</span>
               </label>
               <input
                 type="email"
                 name="email"
                 id="email"
-                className="px-3 w-full py-1 border-b-[1px] border-gray-500 bg-transparent focus:outline-none"
+                className="px-3 w-full  border-b-[1px] border-gray-500 bg-transparent focus:outline-none py-2 text-xl"
               />
             </div>
           </div>
           <div className="flex flex-col">
-            <label htmlFor="message" className="text-gray-400">
+            <label htmlFor="message" className="text-lg">
               Message <span className="text-red-500 text-xs">*</span>
             </label>
             <input
               type="text"
               name="message"
               id="message"
-              className="px-3 py-1 border-b-[1px] border-gray-500 bg-transparent focus:outline-none"
+              className="px-3  border-b-[1px] border-gray-500 bg-transparent focus:outline-none py-2 text-xl"
             />
           </div>
           <button className="bg-white w-max ml-auto hover:bg-blue-500 hover:text-white duration-300 font-semibold text-black px-10 py-3 rounded-3xl mt-7">

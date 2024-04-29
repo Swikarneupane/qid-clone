@@ -5,7 +5,9 @@ const Terms = () => {
     <div className=" pt-40 px-5 pb-5 max-w-[1150px] mx-auto">
       <div className="flex flex-col text-white text-[17px] gap-9 font-semibold">
         <div>
-          <h1 className="font-bold text-[60px]">Terms & Conditions</h1>
+          <h1 className="font-bold text-[60px] text-[#BDBDBD]">
+            Terms & Conditions
+          </h1>
         </div>
         <div className="bg-white text-black rounded-3xl p-6 flex flex-col gap-5">
           <p>

@@ -1,48 +1,61 @@
 import React from "react"
 
+const list = [
+  {
+    name: "Quick Guest Check-In",
+    gradient: "#006645",
+  },
+  {
+    name: "C-Form Automation",
+    gradient: "#",
+  },
+  {
+    name: "",
+    gradient: "#000000",
+  },
+  {
+    name: "QR Based Customer Onboarding",
+    gradient: "#000000",
+  },
+]
+
 const Booking = () => {
   return (
-    <div className="text-white px-10 pt-60 pb-36 flex flex-row items-center gap-8 max-w-[1150px]">
-      <div className="w-[50%] flex flex-col gap-3">
-        <h2 className="font-bold text-[50px]">Book a Demo</h2>
-        <p className="text-[25px]">
+    <div className="text-white px-5 min-h-[95vh] flex flex-row items-center gap-10 max-w-[1150px] mx-auto">
+      <div className="w-[60%] flex flex-col gap-3">
+        <h2 className="font-bold text-[80px]">Book a Demo</h2>
+        <p className="text-[28px] text-[#FFFFFFC9] leading-tight mb-5">
           Discover Qid - Your Partner in Secure Identity Management
         </p>
-        {/* <p className="flex flex-row items-center gap-3 font-bold">
-          <svg
-            viewBox="0 0 15 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            width="15"
-            height="15">
-            <path
-              d="M.5 4.5l7 4 7-4m-13-3h12a1 1 0 011 1v10a1 1 0 01-1 1h-12a1 1 0 01-1-1v-10a1 1 0 011-1z"
-              stroke="currentColor"></path>
-          </svg>
-          contact@oneqid.com
-        </p>
-        <p className="flex flex-row items-center gap-3 font-bold">
-          <svg
-            viewBox="0 0 15 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            width="15"
-            height="15">
-            <path
-              d="M2.5 0A2.5 2.5 0 000 2.5v2C0 10.299 4.701 15 10.5 15h2a2.5 2.5 0 002.5-2.5v-1.382a1.5 1.5 0 00-.83-1.342l-2.415-1.208a1.5 1.5 0 00-2.094.868l-.298.893a.71.71 0 01-.812.471A5.547 5.547 0 014.2 6.45a.71.71 0 01.471-.812l1.109-.37a1.5 1.5 0 00.98-1.787l-.586-2.344A1.5 1.5 0 004.72 0H2.5z"
-              fill="currentColor"></path>
-          </svg>
-          +91 960 640 640 4
-        </p> */}
-        <hr />
+
+        <div className="grid grid-cols-3 gap-5 text-[#A8A8A8]">
+          <span
+            className={`border-[1px]  rounded-xl text-[#FFFFFFC9] mr-5 w-max py-[7px] px-[10px] border-[#4D4D4D] bg-gradient-to-br  from-[#353535C7] via-[#353535C7]  to-[#006645]`}>
+            Quick Guest Check-In
+          </span>
+          <span
+            className={`border-[1px] rounded-xl text-[#FFFFFFC9] ml-2 w-max py-[7px] px-[10px] border-[#4D4D4D] bg-gradient-to-br from-[#353535C7] via-[#353535C7]  to-[#B45B0F]`}>
+            C-Form Automation
+          </span>
+          <span
+            className={`border-[1px] rounded-xl text-[#FFFFFFC9] w-max py-[7px] px-[10px] border-[#4D4D4D] bg-gradient-to-br from-[#353535C7] via-[#353535C7] to-[#000000]`}>
+            Business Analytics
+          </span>
+          <span
+            className={`border-[1px] rounded-xl text-[#FFFFFFC9] w-max py-[7px] px-[10px] border-[#4D4D4D] bg-gradient-to-br from-[#353535C7] via-[#353535C7] to-[#000000]`}>
+            QR Based Customer Onboarding
+          </span>
+        </div>
+
+        <hr className="my-9 opacity-35 w-[75%]" />
         <p className="text-blue-400 font-semibold text-[32px]">
           Trusted by 30,000+ Users
         </p>
       </div>
-      <div className="px-8 w-[50%] py-8 border-[1px] rounded-3xl font-medium">
-        <form className="flex flex-col gap-7">
+      <div className="p-10 w-[50%]  border-[1px] rounded-3xl font-medium border-[#5E5E5E]">
+        <form className="flex flex-col gap-7 ">
           <div className="flex flex-col font-medium">
-            <label htmlFor="name" className="text-gray-400">
+            <label htmlFor="name" className="text-[#B8B8B8]">
               Name
             </label>
             <input
@@ -54,7 +67,7 @@ const Booking = () => {
           </div>
           <div className="flex flex-row gap-5">
             <div className="flex flex-col">
-              <label htmlFor="phnum" className="text-gray-400">
+              <label htmlFor="phnum" className="text-[#B8B8B8]">
                 Phone Number
               </label>
               <input
@@ -65,7 +78,7 @@ const Booking = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="email" className="text-gray-400">
+              <label htmlFor="email" className="text-[#B8B8B8]">
                 Email
               </label>
               <input
@@ -77,7 +90,7 @@ const Booking = () => {
             </div>
           </div>
           <div className="flex flex-col">
-            <label htmlFor="message" className="text-gray-400">
+            <label htmlFor="message" className="text-[#B8B8B8]">
               Company Name
             </label>
             <input

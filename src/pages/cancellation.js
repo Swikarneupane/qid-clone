@@ -5,7 +5,7 @@ const Cancellation = () => {
     <div className=" pt-40 px-5 pb-5 max-w-[1150px] mx-auto">
       <div className="flex flex-col text-white text-[17px] gap-9 font-semibold">
         <div>
-          <h1 className="font-bold text-[60px]">
+          <h1 className="font-bold text-[60px] text-[#BDBDBD]">
             Cancellation and Refund Policy
           </h1>
         </div>
