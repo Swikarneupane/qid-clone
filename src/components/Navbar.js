@@ -154,7 +154,7 @@ const Navbar = () => {
         )}
         {openNav && (
           <div
-            className="absolute right-10 top-10 cursor-pointer"
+            className="absolute right-10 top-6 cursor-pointer"
             onClick={() => {
               setOpenNav(false)
             }}>
