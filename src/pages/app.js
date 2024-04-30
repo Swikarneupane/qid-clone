@@ -4,7 +4,7 @@ import Link from "next/link"
 
 const App = () => {
   return (
-    <div className="bg-[#FEFFFE] mx-auto">
+    <div className="bg-[#FEFFFE] mx-auto py-5">
       <div className=" flex md:flex-row flex-col items-center justify-center md:px-16 sm:px-10 px-2 pt-20 pb-10 gap-9 max-w-[1150px] mx-auto">
         <div className="w-[70%] flex flex-col  items-center">
           <h3 className="text-black md:text-[60px] sm:text-[40px] text-[30px] font-extrabold mb-5">
