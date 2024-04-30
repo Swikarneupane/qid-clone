@@ -4,7 +4,7 @@ import Hero from "@/components/Hero"
 import { Inter } from "next/font/google"
 import ForBusiness from "@/components/ForBusiness"
 import Analytics from "@/components/Analytics"
-import Testimonials from "@/components/Testimonials"
+import Testimonial from "@/components/Testimonials"
 import Image from "next/image"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -18,7 +18,7 @@ export default function Home() {
       <Elements />
       <ForBusiness />
       <Analytics />
-      {/* <Testimonials /> */}
+      <Testimonial />
     </main>
   )
 }
