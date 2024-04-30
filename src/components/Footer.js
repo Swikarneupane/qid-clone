@@ -91,7 +91,6 @@ const Footer = () => {
         <p className="md:text-lg sm:text-base text-sm">
           Oneqid Technologies Private Limited
         </p>
-        {/* <Link className="bg-white w-max h-max px-2 rounded-2xl" href="/"> */}
         <Link
           href="https://www.linkedin.com/company/oneqid/"
           className="bg-white w-max h-max p-[6px] rounded-2xl hover:opacity-80 duration-300">
@@ -107,7 +106,6 @@ const Footer = () => {
               stroke="#fff"></path>
           </svg>
         </Link>
-        {/* </Link> */}
       </div>
     </div>
   )

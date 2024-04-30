@@ -19,7 +19,6 @@ const App = () => {
                   width={250}
                   height={20}
                   alt="App Store"
-                  // className="w-full h-full"
                 />
               </Link>
               <Link href="https://play.google.com/store/apps/details?id=com.quickids.digilocker.qid">
@@ -28,7 +27,6 @@ const App = () => {
                   width={250}
                   height={20}
                   alt="App Store"
-                  // className="w-full h-full"
                 />
               </Link>
             </div>
@@ -41,7 +39,6 @@ const App = () => {
             />
           </div>
 
-          {/* <div></div> */}
         </div>
         <div className="w-[55%] pt-10">
           <Image

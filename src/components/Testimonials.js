@@ -53,25 +53,24 @@ const testimonialList = [
 
 const Testimonials = () => {
   return (
-    <div className="text-white max-w-[1150px] mt-12">
+    <div className="text-white md:max-w-[1150px] mt-12 w-[90%]">
       <div className=" flex flex-col gap-3 items-center justify-center">
-        <h3 className="font-bold text-[65px]">
+        <h3 className="font-bold md:text-[65px] text-[50px] leading-tight">
           <span className="bg-gradient-to-r from-[#FFB76B]  via-[#FF7C00] to-[#FF7F04] inline-block text-transparent bg-clip-text ">
             Identified
           </span>{" "}
           by <span className="italic">qid</span>
         </h3>
-        <p className="text-center font-semibold text-[23px]">
+        <p className="text-center font-semibold md:text-[23px] text-[18px]">
           Let’s dive into the real stories of how our service has touched the
           lives of our customers.
         </p>
       </div>
-      <div className="mb-16 w-full">
+      <div className="mb-16 w-full overflow-x-hidden">
         <div className="">
           <Swiper
             modules={[Navigation, A11y, Autoplay]}
             autoplay={{ delay: 4000 }}
-            // navigation={true}
             loop={true}
             breakpoints={{
               360: {

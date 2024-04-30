@@ -47,23 +47,8 @@ const Elements = () => {
         </div>
       </div>
 
-      {/* Identity part  */}
       <div>
-        {/* <div className="flex flex-row gap-5">
-          {/* <div className="w-[50px] ">
-            <div className=" flex flex-row">
-              <div className="w-[5px] mx-auto mb-3 bg-gradient-to-b from-[#2d2c2b]  to-[#5af84a]"></div>
-            </div>{" "}
-            <hr className="mb-3" />
-          </div> */}
-        {/* <h3 className="text-[#FFFFFFB3] w-[40%] text-[40px] font-bold leading-[45px]">
-            Your true identity,{" "}
-            <span className="bg-gradient-to-r from-[#9cff9f]  via-[#5af84a] to-[#5af84a] inline-block text-transparent bg-clip-text ">
-              managed
-            </span>{" "}
-            with ease.
-          </h3>
-        </div> */}
+        
         <div className="flex flex-row my-3 gap-5">
           <div className="w-[34px]">
             <div className="w-[5px] mx-auto mb-4 bg-gradient-to-b from-[#0b0b0b]  to-[#5af84a] h-[150px]"></div>
@@ -84,7 +69,6 @@ const Elements = () => {
           <div className="w-[55px] ml-2">
             <div className="w-[5px] mx-auto mb-1 bg-gradient-to-b from-[#9cff9f] via-[#3b6d36] to-[#eb6b15] md:h-[250px] h-[400px] -mt-2"></div>
           </div>
-          {/* <div className=""> */}
           <div className="text-[#797878F5] sm:text-[22px] text-[18px] md:h-[150px] h-[300px] mt-7 ml-3 font-semibold leading-tight">
             With qid, managing your IDs has never been easier. You can store and
             access all your IDs in one place, share them securely with others,
@@ -93,7 +77,6 @@ const Elements = () => {
             verification processes, and hello to the convenience and simplicity
             of qid.
           </div>
-          {/* </div> */}
         </div>
 
         <div className="flex flex-row my-3 gap-5">
