@@ -67,46 +67,48 @@ const Testimonials = () => {
         </p>
       </div>
       <div className="mb-16 w-full">
-        <Swiper
-          modules={[Navigation, A11y, Autoplay]}
-          autoplay={{ delay: 4000 }}
-          // navigation={true}
-          loop={true}
-          breakpoints={{
-            360: {
-              slidesPerView: 1,
-            },
+        <div className="">
+          <Swiper
+            modules={[Navigation, A11y, Autoplay]}
+            autoplay={{ delay: 4000 }}
+            // navigation={true}
+            loop={true}
+            breakpoints={{
+              360: {
+                slidesPerView: 1,
+              },
 
-            1024: {
-              slidesPerView: 3,
-            },
-          }}
-          className="flex flex-row gap-5 h-full cursor-grab">
-          {testimonialList.map((item, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex -ml-2 w-full my-5 text-white bg-[#050505] h-full">
-                <div className="p-7 border-[1px] border-[#1D1D1D] flex flex-col rounded-lg gap-5">
-                  <div className="w-[120px] h-[120px] rounded-lg">
-                    <Image
-                      src={item.src}
-                      width={500}
-                      height={200}
-                      alt={item.name}
-                      className="rounded-[50%] w-full h-full object-cover"
-                    />
-                  </div>
-                  <p className="font-semibold text-[23px]">{item.message}</p>
-                  <div className="text-sm text-[#707070]">
-                    <p className="font-semibold text-[18px] mb-2">
-                      {item.name}
-                    </p>
-                    <p className="text-[15px]">{item.position}</p>
+              1024: {
+                slidesPerView: 3,
+              },
+            }}
+            className="flex flex-row gap-5 h-full cursor-grab">
+            {testimonialList.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div className="flex -ml-2 w-full my-5 text-white bg-[#050505] h-full">
+                  <div className="p-7 border-[1px] border-[#1D1D1D] flex flex-col rounded-lg gap-5">
+                    <div className="w-[120px] h-[120px] rounded-lg">
+                      <Image
+                        src={item.src}
+                        width={500}
+                        height={200}
+                        alt={item.name}
+                        className="rounded-[50%] w-full h-full object-cover"
+                      />
+                    </div>
+                    <p className="font-semibold text-[23px]">{item.message}</p>
+                    <div className="text-sm text-[#707070]">
+                      <p className="font-semibold text-[18px] mb-2">
+                        {item.name}
+                      </p>
+                      <p className="text-[15px]">{item.position}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
   )

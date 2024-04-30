@@ -124,7 +124,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`text-white flex justify-center fixed  duration-500 pt-6 pb-4 w-full z-[100]  -mt-2 bg-black
+      className={`text-white flex justify-center fixed  duration-500 pt-2 pb-4 w-full z-[100]  -mt-2 bg-black
       `}>
       {openNav && <Sidebar openNav={openNav} setOpenNav={setOpenNav} />}
       <div
@@ -133,7 +133,7 @@ const Navbar = () => {
         <Link
           href="/"
           className="flex font-medium items-center text-white md:mb-0 my-auto ">
-          <p className=" xl:text-[45px] text-[40px] my-auto text-[#d6d5d5] flex flex-col items-center font-bold italic">
+          <p className=" xl:text-[40px] text-[40px] my-auto text-[#d6d5d5] flex flex-col items-center font-bold italic">
             qid
           </p>
         </Link>
